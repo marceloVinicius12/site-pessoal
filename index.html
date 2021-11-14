@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>marcelo vinicius</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">mv<span>dev</span></a>
+        <div class="menuhamburguer" onclick="menuhamburguer();"></div>
+        <ul class="navigation">
+            <li><a href="#">historia</a></li>
+            <li><a href="#">projetos</a></li>
+            <li><a href="#">linguagens</a></li>
+            <li><a href="#">hobbies</a></li>
+            <li><a href="#">contato</a></li>        
+        </ul>
+    </header> 
+    <section class="banner" id="banner">
+    <div class="content"> 
+    <h1 class="titulo">marcelo vinicius</h1>
+    <h3 class="subtitulo">desenvolvedor web</h3>
+    </div>
+    </section>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+        const header = document.querySelector('header');
+       header.classList.toggle("sticky", window.scrollY > 0);
+        });
+       function menuhamburguer(){
+           const menuhamburguer = document.querySelector('.menuhamburguer');
+           const navigation = document.querySelector('.navigation');   
+           menuhamburguer.classList.toggle('active')
+           navigation.classList.toggle('active')
+       }
+</script>
+</body>
+</html>

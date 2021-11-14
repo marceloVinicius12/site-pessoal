@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  scroll-behavior: smooth;
+  
+}
+body{
+    min-height: 1000px;
+}
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../img/fundo.jpg);
+    background-size: cover;
+    object-fit: cover;
+    object-position: left ;
+}
+
+.banner .content,
+.ambiente .content
+{
+    max-width: 900px;
+    text-align: center;
+}
+.banner .content h2,
+.ambiente .content h2{
+    font-size: 2.5em;
+    color: var(--cor-do-texto);
+}
+.banner .content p
+.ambiente .content p{
+    font-size: 1em;
+    color: var(--cor-do-texto);
+}
+
+header
+{
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+padding: 40px 100px;
+z-index: 10000;
+justify-content: space-between;
+display: flex;
+align-items: center;
+transition: 0.5s;
+font-family: Arial, Helvetica, sans-serif;
+}
+header.sticky
+{
+    background: #fff;
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+header.sticky .logo
+{
+    color: #111;
+}
+header .logo
+{
+    color: whitesmoke;
+    font-weight: 700;
+    font-size: 2.6em;
+    text-decoration: none;
+}
+header .logo span
+{
+    color: aqua;
+}
+header .navigation
+{
+    position: relative;
+     display: flex;
+}
+header .navigation li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navigation li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+header.sticky .navigation li a{
+    color: #111;
+}
+header.sticky .navigation li a:hover{
+    color: aqua;
+}
+header .navigation li a:hover
+{
+    color: aqua;
+}
+.titulo{
+    color: aqua;
+    font-size: 3.5em;
+    font-family: sans-serif;
+}
+.subtitulo{
+    font-size: 1.9em;
+    color: white;
+    font-family: sans-serif;
+}
+@media(max-width: 991px)
+{
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navigation li{
+        margin-left: 0;
+    }
+    header .navigation li a{
+       
+        color: #111;
+        font-size: 1.6em;
+       
+    }
+    .menuhamburguer
+    {
+      position: relative;
+      width: 40px;
+      height: 40px;
+      background: url(../img/menu.png);
+      background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    }
+    .menuhamburguer.active
+    {
+      background : url(../img/saida.png);
+      background-size: 25px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    header.sticky .menuhamburguer
+    {
+        filter: invert(1);
+    }
+}
