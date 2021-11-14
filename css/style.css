@@ -75,6 +75,9 @@ header .logo span
 {
     color: aqua;
 }
+span{
+    color: rgb(36, 47, 206);
+}
 header .navigation
 {
     position: relative;
@@ -164,5 +167,33 @@ header .navigation li a:hover
     header.sticky .menuhamburguer
     {
         filter: invert(1);
+    }
+}
+.titulohistoria{
+    font-size: 3.2em;
+    text-align: center;
+
+}.textohistoria{
+    font-size: 1.3em;
+    text-align:left;
+    align-items: center;
+    margin-left: 2em;
+    
+}
+.titulohistoria,
+.textohistoria,
+.imghistoria{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+    animation: 0.5s ease 0.9s animacaoTitulo forwards;
+  }
+  @keyframes animacaoTitulo {
+    from {
+      transform: scale(0.2) translateY(50vh);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1) translateY(0);
+      opacity: 1;
     }
 }
