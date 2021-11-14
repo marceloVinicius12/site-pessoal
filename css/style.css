@@ -207,6 +207,9 @@ header .navigation li a:hover
     border-image: linear-gradient(155deg, #1355d1 0%, #0eccbc 100%) 1;
     align-items: center;
     text-align: center;
+
+    width: 100%;
+
 }
 
 .card-text{
@@ -223,4 +226,36 @@ header .navigation li a:hover
 #imagemcard{
     width: 100%;
     height: 6.4em;
+}
+.linguagens{
+    text-align: center;
+    font-size: 1.4em;
+    align-items: center;
+}
+#cartao{
+    border: 4px solid;
+    border-image: linear-gradient(155deg, #1355d1 0%, #0eccbc 100%) 1;
+    align-items: center;
+    text-align: center;
+
+    width: 100%;
+
+}
+@media(max-width: 500px)
+{
+#cartao{
+    text-align: center;
+    align-items: center;
+    margin-left: 00.8em;
+}
+}
+.cardlinguagens{
+    bottom: 3em;
+}
+.card-title-ling{
+    font-size: 0.8em;
+}
+.card-text-ling{
+    font-size: 0.4em;
+    
 }
