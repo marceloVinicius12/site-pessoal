@@ -2,12 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-  scroll-behavior: smooth;
   
 }
 body{
     min-height: 1000px;
+    
 }
 .banner
 {
@@ -168,6 +167,7 @@ header .navigation li a:hover
     {
         filter: invert(1);
     }
+    
 }
 .titulohistoria{
     font-size: 3.2em;
@@ -180,7 +180,7 @@ header .navigation li a:hover
     margin-left: 2em;
     
 }
-.titulohistoria,
+/*.titulohistoria,
 .textohistoria,
 .imghistoria{
     transform: scale(0.2) translateY(50vh);
@@ -196,4 +196,31 @@ header .navigation li a:hover
       transform: scale(1) translateY(0);
       opacity: 1;
     }
+}*/
+.projetos{
+    text-align: center;
+    font-size: 1.9em;
+    align-items: center;
+}
+#cartao{
+    border: 4px solid;
+    border-image: linear-gradient(155deg, #1355d1 0%, #0eccbc 100%) 1;
+    align-items: center;
+    text-align: center;
+}
+
+.card-text{
+    font-size: 0.8em;
+
+}
+
+.card-title{
+    font-size: 1.1em;
+}
+#text-calc{
+    font-size: 1.0em;
+}
+#imagemcard{
+    width: 100%;
+    height: 6.4em;
 }
