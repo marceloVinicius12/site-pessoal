@@ -6,6 +6,7 @@
 }
 body{
     min-height: 1000px;
+  
     
 }
 
@@ -113,13 +114,25 @@ header .navigation li a:hover
     color: white;
     font-family: sans-serif;
 }
+@media (min-width: 768px) {
+   
+    #navbar div.navbar-header {
+        float: none;
+    }
+   
+}
+
 @media(max-width: 991px)
 {
     header,
     header.sticky{
         padding: 10px 20px;
+     
     }
-   
+    header.sticky
+    {
+        display: none;
+    }
 }
 .titulohistoria{
     font-size: 3.2em;
