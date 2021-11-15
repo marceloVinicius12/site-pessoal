@@ -8,6 +8,7 @@ body{
     min-height: 1000px;
     
 }
+
 .banner
 {
     position: relative;
@@ -118,56 +119,7 @@ header .navigation li a:hover
     header.sticky{
         padding: 10px 20px;
     }
-    header .navigation
-    {
-        display: none;
-    }
-    
-    header .navigation.active
-    {
-        width: 100%;
-        height: calc(100% - 68px);
-        position: fixed;
-        top: 68px;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        background: #fff;
-    }
-    header .navigation li{
-        margin-left: 0;
-    }
-    header .navigation li a{
-       
-        color: #111;
-        font-size: 1.6em;
-       
-    }
-    .menuhamburguer
-    {
-      position: relative;
-      width: 40px;
-      height: 40px;
-      background: url(../img/menu.png);
-      background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: center;
-    cursor: pointer;
-    }
-    .menuhamburguer.active
-    {
-      background : url(../img/saida.png);
-      background-size: 25px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
-    header.sticky .menuhamburguer
-    {
-        filter: invert(1);
-    }
-    
+   
 }
 .titulohistoria{
     font-size: 3.2em;
