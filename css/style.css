@@ -257,5 +257,14 @@ header .navigation li a:hover
 }
 .card-text-ling{
     font-size: 0.4em;
-    
+}
+.hobbies{
+    text-align: center;
+    font-size: 1.4em;
+}
+.textohobbies{
+    font-size: 0.5em;
+    text-align:left;
+    align-items: center;
+    margin-left: 1.0em;
 }
