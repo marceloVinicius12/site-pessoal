@@ -88,6 +88,19 @@ header .navigation li{
     list-style: none;
     margin-left: 30px;
 }
+header .navigation.active
+{
+    width: 100%;
+    height: calc(100% - 68px);
+    position: fixed;
+    top: 68px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+}
 header .navigation li a{
     text-decoration: none;
     color: white;
@@ -104,6 +117,7 @@ header .navigation li a:hover
 {
     color: aqua;
 }
+
 .titulo{
     color: aqua;
     font-size: 3.5em;
@@ -119,17 +133,51 @@ header .navigation li a:hover
     #navbar div.navbar-header {
         float: none;
     }
-   
 }
 
 @media(max-width: 991px)
 {
+    .menuhamburguer
+{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background: url(../img/menu.png);
+  background-size: 30px;
+background-repeat: no-repeat;
+background-position: center;
+cursor: pointer;
+}
+.menuhamburguer.active
+{
+  background : url(../img/saida.png);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header .navigation li{
+    margin-left: 0;
+}
+header .navigation li a{
+   
+    color: #111;
+    font-size: 1.6em;
+   
+}
+header.sticky .menuhamburguer
+{
+    filter: invert(1);
+}
     header,
     header.sticky{
         padding: 10px 20px;
      
     }
     header.sticky
+    {
+        display: none;
+    }
+    header .navigation
     {
         display: none;
     }
@@ -143,8 +191,8 @@ header .navigation li a:hover
     text-align:left;
     align-items: center;
     margin-left: 2em;
-    
 }
+
 /*.titulohistoria,
 .textohistoria,
 .imghistoria{
