@@ -331,9 +331,15 @@ header.sticky .menuhamburguer
 #livro{
     height: 3.6em;
 }
+#historia{
+    margin-left: -2.0em;
+}
 }
 .cardlinguagens{
     bottom: 3em;
+    align-items: center;
+    text-align: center;
+    margin-left: 0.5em;
 }
 .card-title-ling{
     font-size: 0.8em;
