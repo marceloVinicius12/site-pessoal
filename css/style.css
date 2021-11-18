@@ -8,8 +8,9 @@ body{
     min-height: 1000px;
    justify-content: flex-end;
    align-items: flex-end;
-  
-    
+   align-items: center;
+   text-align: center;
+   overflow-x: hidden;
 }
 
 .banner
@@ -24,6 +25,7 @@ body{
     background-size: cover;
     object-fit: cover;
     object-position: left ;
+    overflow: hidden;
 }
 
 .banner .content,
@@ -193,7 +195,7 @@ header.sticky .menuhamburguer
     font-size: 1.3em;
     text-align:left;
     align-items: center;
-    margin-left: 2em;
+    margin-left: 4.4em;
 }
 .titulo,
 .subtitulo{
@@ -234,6 +236,7 @@ header.sticky .menuhamburguer
     font-size: 1.9em;
     align-items: center;
 }
+
 .projetos{
     transform: scale(0.2) translateY(50vh);
     opacity: 0;
@@ -366,6 +369,7 @@ footer{
     justify-content: center;
     align-items: center;
    flex-direction: column;
+
 }
 footer .social_icon{
     position: relative;
