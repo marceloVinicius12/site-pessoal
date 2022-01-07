@@ -283,12 +283,12 @@ header.sticky .menuhamburguer
     }
 }
 #cartao{
+    
     border: 4px solid;
     border-image: linear-gradient(155deg, #1355d1 0%, #0eccbc 100%) 1;
     align-items: center;
     text-align: center;
-
-    width: 100%;
+   
 
 }
 
@@ -296,12 +296,18 @@ header.sticky .menuhamburguer
     font-size: 0.8em;
 
 }
+.card-text-arq{
+    font-size: 0.6em;
+}
+.card-text-temp{
+    font-size: 0.6em;
+}
 
 .card-title{
     font-size: 1.1em;
 }
 #text-calc{
-    font-size: 1.0em;
+    font-size: 0.9em;
 }
 #imagemcard{
     width: 100%;
@@ -317,7 +323,7 @@ header.sticky .menuhamburguer
     border-image: linear-gradient(155deg, #1355d1 0%, #0eccbc 100%) 1;
     align-items: center;
     text-align: center;
-
+    height: 23em;
     width: 100%;
 
 }
